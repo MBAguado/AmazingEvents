@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>Amazing Events Details</title>
+  <link rel="shortcut icon" href="../Assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <div class="div-header">
+        <img class="img-logo" src="../Assets/logoAmazingEvents.png" alt="">
+        <nav class="nav p-2 navbar navbar-expand-lg bg-dark">
+          <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active link-light" aria-current="page" href="../html/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="../html/upcomingEvents.html">Upcoming Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="../html/pastEvents.html">Past Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="../html/contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light" href="../html/stats.html">Stats</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+
+    </header>
+
+    <main class="d-flex jusutify-content-center align-items-center responsiveCards">
+
+      <section id="cardDetails" class="cardSizeDetails">
+
+        <div class="card">
+
+          <Img :src="eventoid.image" alt="imgCard">
+
+          <div class="d-flex flex-column">
+
+            <h4 class="card-title">{{eventoid.name}}</h4>
+            <h4 class="cardDescription">{{eventoid.description}}</h4>
+            <p class="card-text m-2">Date: {{eventoid.date}}</p>
+            <p class="card-text m-2">Price: $ {{eventoid.price}}.00 USD</p>
+            <p class="card-text m-2">Category: {{eventoid.category}}</p>
+            <p class="card-text m-2">Location: {{eventoid.place}}</p>
+            <p class="card-text m-2">Capacity: {{eventoid.capacity}} people</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    <footer>
+      <div class="iconos">
+        <img class="img-iconos" src="../Assets/insta.jpg" alt="insta">
+        <img class="img-iconos" src="../Assets/face.jpg" alt="face">
+        <img class="img-iconos" src="../Assets/wap.jpg" alt="">
+        <p class="d-flex mt-3">María Belén Aguado- Cohort30</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
